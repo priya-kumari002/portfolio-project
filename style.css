@@ -1,43 +1,44 @@
 @import url('https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
 *{
- margin: 0;
- padding: 0;
- font-family: 'poppins',sans-serif;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
-text-size:30px;
- color: cyan; text-align: center;
+    text-size:30px;
+    color: cyan;
+    text-align: center;
     margin-top: 5px;;
 }
 nav{
- background-color: #262525; /* Or your desired background color */
- padding: 20px;
- display: flex;
-justify-content: space-between;
-align-items: center;
- } /* Vertical centering */ 
+        background-color: #262525; /* Or your desired background color */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Vertical centering */
+      }
       
- #logo {
- height: 50px; /* Adjust as needed */
- }
- logo:hover {
-  filter: brightness(1.2) contrast(1.2); /* Brighten and increase contrast on hover */
-}
+      #logo {
+        height: 50px; /* Adjust as needed */
+      }
+      logo:hover {
+        filter: brightness(1.2) contrast(1.2); /* Brighten and increase contrast on hover */
+      }
       
-#logo:active {
- filter: brightness(0.8) contrast(0.8); /* Darken and decrease contrast on active */
-}
+      #logo:active {
+        filter: brightness(0.8) contrast(0.8); /* Darken and decrease contrast on active */
+      }
       
-  /* Add a color transition effect to the logo */
- #logo {
- filter: grayscale(100%); /* Convert logo to grayscale */
- transition: filter 0.3s ease;
- }
+      /* Add a color transition effect to the logo */
+      #logo {
+        filter: grayscale(100%); /* Convert logo to grayscale */
+        transition: filter 0.3s ease;
+      }
       
- #logo:hover {
-   filter: grayscale(0%); /* Restore original color on hover */
- }
+      #logo:hover {
+        filter: grayscale(0%); /* Restore original color on hover */
+      }
     
 body{
     margin: 0;
@@ -85,13 +86,13 @@ body{
 .leftcon{
     
 
- width: 90%;
+ width: 70%;
  padding-left: 3rem;
 }
 .rightcon{
   background:linear-gradient(#26252523 );
   width: auto;
-  width:10%;
+  width:30%;
 
 }
 .icons ,.fa-brands{
@@ -126,8 +127,7 @@ body{
     color:brown
 }
 .content h1{
-
-    font-size: 3rem;
+    font-size: 4rem;
     color: cyan;
 }
 .content p{
@@ -620,10 +620,7 @@ box-shadow:-3px -3px 8px -1px rgba(255,255,255,0.63);
     margin-bottom: 20px;
   }
   .latestproject {
-    display:grid;
-    grid-template-columns: repeat(3,2fr);
-    grid-template-rows: repeat(2,3fr);
-    text-align: center;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
@@ -631,9 +628,8 @@ box-shadow:-3px -3px 8px -1px rgba(255,255,255,0.63);
     width: 100%;
   }
   .box111 {
-    display: grid;
-    grid-template-columns: repeat(3,2fr);
-    grid-template-rows: repeat(2,3fr) ;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     max-width: 300px;
@@ -1007,58 +1003,38 @@ button:hover{
 @media (max-width: 992px)
 {
     .portfolio-container {
-      display:flex;
       flex-direction: column;
     }
     .portfolio-container .leftcon {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .about {
-      display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
     .about .container {
-      display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
     .about .containerleft,
     .about .containerright {
-      display: flex;
-      direction: column;
       margin-bottom: 20px;
     }
     .project .latestproject {
-      display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
     .contact-container {
-
       flex-direction: column;
     }
     .contact-wrapper,
     .contact-info {
-      display: flex;
-      flex-direction: column;
       margin-bottom: 20px;
     }
     .footercontainer {
-      display: flex;
       flex-direction: column;
     }
   }
   @media (max-width: 768px) {
     .navlist {
-      display: flex;
-
       flex-direction: column;
-      text-align: end;
-      justify-content: center;
     }
     .navlist li {
       margin-bottom: 10px;
